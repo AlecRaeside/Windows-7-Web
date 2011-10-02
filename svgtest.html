@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	
+<svg xmlns="http://www.w3.org/2000/svg"	xmlns:xlink="http://www.w3.org/1999/xlink" 
+				 width="100%" height="100%"
+				>
+				<filter id="bg-filter-blur"  x="0%" y="90%" width="" height="10%">
+						<feGaussianBlur stdDeviation="3" />
+				</filter>
+				<filter id="bg-filter-normal"  x="0%" y="0%" width="100%" height="90.2%">
+						<feGaussianBlur stdDeviation="0" />
+				</filter>
+
+				<image id="bg-blur" x="0%" y="0%" xlink:href="aus-bg.jpg" filter="url(#bg-filter-blur)" height="1200px" width="1920px" />
+				<image id="bg-normal" x="0%" y="0%" xlink:href="aus-bg.jpg" filter="url(#bg-filter-normal)" height="1200px" width="1920px"/>
+			</svg>
+			
+			<script>window.jQuery || document.write('<script src="js/libs/jquery162.js"><\/script>')</script>
+			<script type="text/javascript">
+			$(function() {
+				$("#bg-blur,#bg-normal").attr("width","1366px").attr("height","800px");
+			})
+			</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg"	xmlns:xlink="http://www.w3.org/1999/xlink" 
+				 width="100%" height="100%"
+				>
+    <defs>
+        <rect id = "r1" width = "170" height = "35"  />
+       
+        <radialGradient id = "g1" cx = "15%" cy = "10%" r = "48%" fx = "15%" fy = "10%" >
+            <stop stop-color = "#ccc" offset = "0%" stop-opacity="0.9" />
+            
+            <stop stop-color = "#eee" offset = "100%" stop-opacity="0.09"/>
+        </radialGradient>
+        <clipPath id = "clip1">
+            <path d = "M 0 0 L 180 0 L 180 6 Q 60 4 0 35"/>
+        </clipPath>
+    </defs>
+    <g>
+        <use x = "0" y = "0" xlink:href = "#r1" fill = "url(#g1)" clip-path = "url(#clip1)"/>
+
+    </g>
+</svg>

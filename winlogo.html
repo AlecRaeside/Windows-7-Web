@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+	body {
+		background-color:#222;
+	}
+	#winlogo {
+		background-image:-webkit-radial-gradient(50% 105%,circle, #03dffd,#02537f 13px,#02537f 25px,#2c5683 27px,#a2c8f8 37px,#cdf 40px);
+		display:inline-block;
+		padding:5px;
+		border:#02436f;
+		border-radius:30px;
+	}
+	#winlogo_contain {
+		width:26px;
+		padding:2px;
+		overflow:auto;
+		-moz-transform: rotate(7deg);
+		-o-transform: rotate(7deg);
+		-webkit-transform: rotate(7deg);
+		-ms-transform: rotate(7deg);
+		transform: rotate(7deg);
+		zoom: 1;
+	}
+	.win-square {
+		display:inline-block;
+		width:11px;
+		height:11px;
+		margin:1px;
+		float:left;
+		-webkit-mask-image:-webkit-radial-gradient(50% 50%,circle, rgba(255,255,255,0.8),rgba(255,255,255,0));
+	}
+	.win-r { 
+		background-color:red;
+		-webkit-mask-image:-webkit-radial-gradient(80% 80%,circle, rgba(255,255,255,0.8),rgba(255,255,255,0));
+	}	
+	.win-g { 
+		background-color:green;
+		-webkit-mask-image:-webkit-radial-gradient(20% 80%,circle, rgba(255,255,255,0.8),rgba(255,255,255,0));
+	}
+	.win-b { 
+		background-color:blue;
+		-webkit-mask-image:-webkit-radial-gradient(80% 20%,circle, rgba(255,255,255,0.8),rgba(255,255,255,0));
+	}	
+	.win-y { 
+		background-color:orange;
+		-webkit-mask-image:-webkit-radial-gradient(20% 20%,circle, rgba(255,255,255,0.8),rgba(255,255,255,0));
+	}
+	</style>
+</head>
+<body>
+	<div id=winlogo>
+	<div id=winlogo_contain>
+	<div class="win-square win-r"></div><div class="win-square win-g"></div><div class="win-square win-b"></div><div class="win-square win-y"></div>
+	</div>
+	</div>
+	</body>
+</html>

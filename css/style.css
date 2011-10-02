@@ -1,0 +1,187 @@
+html ,body{
+-webkit-font-smoothing: antialiased;
+overflow:hidden;
+}
+
+body {
+	font-family:segoe ui semibold,calibri,sans-serif;
+	color:#fff;
+	font-size:12px;
+}
+#templates {
+	display:none;
+}
+#bg{
+	position:fixed;
+	bottom:0px;
+	top:0px;
+	left:0px;
+	right:0px;
+}	
+#container {
+	position:fixed;
+	height:100%;
+	width:100%;
+	overflow:hidden;
+	bottom:0px;
+	left:0px;
+}
+#taskbar {
+	position:absolute;
+}
+#taskbar {
+	bottom:0px;
+	background-color:rgba(50,50,50,0.5);
+	left:0px;
+	right:0px;
+	border-top:1px #555 solid;
+	overflow:hidden;
+	padding-left:0px;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	cursor:default;
+}
+#taskbar .window-btn {
+	width:auto;
+	text-overflow: ellipsis;
+	overflow:hidden;
+	 white-space: nowrap;
+	display:inline-block;
+	float:left;
+	max-height:20px;
+	
+	padding:10px 14px;
+	margin:1px;
+
+/* useful if you don't want a bg color from leaking outside the border: */        
+-moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; 
+
+   -moz-transition: all 0.2s ease-out;  /* FF4+ */
+	 -o-transition: all 0.2s ease-out;  /* Opera 10.5+ */
+-webkit-transition: width 0.2s ease-out;  /* Saf3.2+, Chrome */
+	-ms-transition: all 0.2s ease-out;  /* IE10? */
+		transition: width 0.2s ease-out;  
+}
+
+#taskbar .window-btn.active {
+	width:140px;
+	margin:1px 2px;
+	padding:10px 8px 10px 10px;
+	box-shadow: inset 0px 0px 2px #fff,
+	0px 0px 2px rgba(0,0,0,0.5);
+	background-color:rgba(130,130,130,0.4);
+	background-image:url(../btnbg.svg);
+   -moz-border-radius: 2px; 
+-webkit-border-radius: 2px; 
+		border-radius: 2px; 	  
+}
+#taskbar .window-btn.active.focused {
+	box-shadow: inset 0px 0px 2px #fff,
+	0px 0px 2px rgba(0,0,0,0.5),
+	inset 0px 3px 50px rgba(255,255,255,1);
+}
+#taskbar .window-btn .window-btn-title {
+	display:none;
+}
+#taskbar .window-btn.active .window-btn-title {
+	display:inline-block;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width:100px;
+	overflow:hidden;
+}
+#taskbar .window-btn.active:hover {
+}
+
+#taskbar .window-btn:not(.active):hover {
+	position:relative;
+	background-image: -webkit-radial-gradient(50% 104%,circle, rgba(230,230,255,0.6) 0px,rgba(230,230,255,0) 10px,rgba(0,0,0,0));
+}
+#taskbar .window-btn:not(.active):hover img {
+	position:relative;
+	display:block;
+
+}
+
+#taskbar .window-btn:not(.active):hover:after, #taskbar .window-btn:not(.active):hover:before {
+	background-image: -webkit-linear-gradient(top, rgba(200,200,200,0.0), rgba(200,200,200,0.5) 40%, rgba(200,200,200,0.5) 60%, rgba(200,200,200,0.0)); /* Chrome 10+, Saf5.1+ */
+	content:" ";
+	position:absolute;
+	top:1px;
+	bottom:1px;
+	right:0px;
+	width:1px;
+	box-shadow:-1px 0px 1px rgba(0,0,0,0.2);
+}
+#taskbar .window-btn:not(.active):before {
+	left:1px;
+	right:auto;
+	box-shadow:-1px 0px 1px rgba(0,0,0,0.2);
+}
+#taskbar .window-btn img {
+	float:left;
+	margin:-6px 0px -7px 0px;		
+	width:32px;
+	height:32px;
+}
+#taskbar .window-btn.active img {
+	margin:-6px 7px -7px 0px;		
+
+}
+#canvas {
+	display:none;
+}
+
+.window {
+	width:100%;
+	height:83.5%;
+	z-index: 2222;
+	position: fixed;
+}
+	#winlogo {
+		background-image:-webkit-radial-gradient(50% 105%,circle, #03dffd,#02537f 13px,#02537f 25px,#2c5683 27px,#a2c8f8 37px,#cdf 40px);
+		display:inline-block;
+		padding:5px;
+		border:#02436f;
+		border-radius:30px;
+		float:left;
+		margin:0px 10px;
+	}
+	#winlogo_contain {
+		width:26px;
+		padding:2px;
+		overflow:auto;
+		-moz-transform: rotate(7deg);
+		-o-transform: rotate(7deg);
+		-webkit-transform: rotate(7deg);
+		-ms-transform: rotate(7deg);
+		transform: rotate(7deg);
+		zoom: 1;
+	}
+	.win-square {
+		display:inline-block;
+		width:11px;
+		height:11px;
+		margin:1px;
+		float:left;
+		-webkit-mask-image:-webkit-radial-gradient(50% 50%,circle, rgba(255,255,255,0.8),rgba(255,255,255,0));
+	}
+	.win-r { 
+		background-color:red;
+		-webkit-mask-image:-webkit-radial-gradient(80% 80%,circle, rgba(255,255,255,0.8),rgba(255,255,255,0));
+	}	
+	.win-g { 
+		background-color:green;
+		-webkit-mask-image:-webkit-radial-gradient(20% 80%,circle, rgba(255,255,255,0.8),rgba(255,255,255,0));
+	}
+	.win-b { 
+		background-color:blue;
+		-webkit-mask-image:-webkit-radial-gradient(80% 20%,circle, rgba(255,255,255,0.8),rgba(255,255,255,0));
+	}	
+	.win-y { 
+		background-color:orange;
+		-webkit-mask-image:-webkit-radial-gradient(20% 20%,circle, rgba(255,255,255,0.8),rgba(255,255,255,0));
+	}

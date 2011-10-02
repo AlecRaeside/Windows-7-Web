@@ -1,0 +1,42 @@
+~ = partially completed
+* = completed
+
+
+~1. Book-in Sheet – Button on the "view/edit" job screen that displays a print layout of a Job sheet that customers can sign.
+~2. Change the field Title on "Additional device description" to "Solution Description"
+~3. Service Report – Button on the "View/edit" job screen that displays a print layout of a Report that contains original fault & solution + an area for customer to sign.
+*4. Dual Card File associations to job
+*5. Console Job Stats – Add a "Dash board" Page that contains basic job stats.. E.g. How many jobs of each type are active, how many jobs of each status are active
+6. Recovery CD/ Spare parts lookup.
+7. Quote Function added to View/Edit page.
+ 
+
+When you can:
+
+Add the Standing Order/Common Parts from Austins into our Service Console
+*Make our assignee buttons like the new ones in Austins: 
+
+
+~3. Add the MYOB ID to our User details the same as Austins. Also add a Tick box [ ] with the title: "Hidden"
+4. Show MYOB Customer ID in the Static Lists, in the Customer Details area of the "view/edit" job page.
+*5. Remove "Quick Filter" from the menu.
+6. Fault "Tags" Selections in the Job Details area for Service Jobs e.g. LCD, HDD, Virus, Keyboard, ODD, Power…
+7. Job Detail Compusary Rule -  When creating updating job – Password Requires a value in either textbox,Unknown or None
+8. Job Detail Compusary Rule -  When creating updating job – Instore Requires a value, IF "Yes" then a Location needs to be specified. (Could the A to F and 1 to 10 be button selections? Maybe? Like the Assignee Time buttons?)
+9. Add a new Default Job list page. This page will display all jobs assigned to user, separated by Status?? Or maybe Job type?
+
+
+
+Wish list:
+Turn Around Time Report
+*New Card File search function when trying to find customer on book-in.
+Advanced Search fields for finding jobs. Dedicated page.
+target date increments on status change ( Each status would have a pre-set (acknowlodge non working days)
+notifications of comments, status changes, assignee changes for all job assigned to user
+Admin get power to Scratch or Delete Comments, Staff get the power to scratch.
+~Add buttons to "Assignee Time" box to Add RM labour part # with total Assignee Time as Qty.
+Cardfile - postcode/suburb autocomplete from public database from aust. post 
+Cardfile Display throughout Console - phone number formatting (normalize all phone numbers)
+Cardfile to support multiple contacts
+NEW Onsite Booking View
+Built in "Email Client"
