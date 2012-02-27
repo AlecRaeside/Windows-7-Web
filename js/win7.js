@@ -8,10 +8,10 @@ $(function() {
 			var win=$("<div/>",{"class":"window"}),
 				chrome_tabbar = $("#templates .chrome-tabbar").clone(),
 				chrome_toolbar = $("#templates .chrome-mainbar").clone(),
-				chrome_iframe = $("<iframe src='http://www.google.com' class='chrome-iframe'></iframe>");
+				chrome_frame = "<div class=chrome-iframe></div>"
 			win.append(chrome_tabbar)
 			win.append(chrome_toolbar)
-			win.append(chrome_iframe);
+			win.append(chrome_frame);
 			win.prependTo("body");
 			
 			
@@ -29,7 +29,7 @@ $(function() {
 					//console.log(data);
 						var suggestions = [];
 						data[1].forEach(function(suggestion) {
-							suggestions.push(suggestion[0]);
+							suggestions.push(suggestion);
 						})
 						cache[val] = suggestions;
 						displaySuggestions(suggestions);						

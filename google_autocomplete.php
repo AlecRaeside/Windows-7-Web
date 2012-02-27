@@ -1,8 +1,9 @@
 <?php
 	$val=$_GET["q"];
-	$google_query = "http://google.com/complete/search?q=".$val."&hl=en";
+	$google_query = "http://suggestqueries.google.com/complete/search?client=firefox&q=".$val;
 	$res = file_get_contents($google_query);
-	preg_match('#\((.*?)\)#', $res, $possibilities);
-	echo $possibilities[1];	
+	echo $res;
+	//preg_match('#\((.*?)\)#', $res, $possibilities);
+	//echo $possibilities[1];	
 	
 ?>

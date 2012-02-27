@@ -137,9 +137,11 @@ body {
 
 .window {
 	width:100%;
-	height:83.5%;
+	
 	z-index: 2222;
-	position: fixed;
+	position: absolute;
+	top:0px;
+	bottom:126px;
 }
 	#winlogo {
 		background-image:-webkit-radial-gradient(50% 105%,circle, #03dffd,#02537f 13px,#02537f 25px,#2c5683 27px,#a2c8f8 37px,#cdf 40px);

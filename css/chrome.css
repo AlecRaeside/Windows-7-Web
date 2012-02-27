@@ -1,7 +1,7 @@
 .chrome-tabbar {
 	overflow:auto;
-		background-color:rgba(50,50,50,0.5);
-		padding-left:7px;
+	background-color:rgba(50,50,50,0.5);
+	padding-left:7px;
 }
 .chrome-tabbar .tab {
 	display:inline-block;
@@ -11,7 +11,7 @@
 	font-size:12px;
 	color:#000;
 	position:relative;
-	font-family:segoe ui;
+	font-family:segoe ui ,calibri,sans-serif;
 	width:200px;
 	margin-right:0px;
 	-webkit-perspective: 50; perspective: 50;
@@ -108,49 +108,36 @@ background-color:#c13535;
 	display: inline-block;
 	color: white;
 	padding: 0px;
-	margin: 0px 6px;
-	margin-top:1px;
-	font-size: 17px;
-	text-shadow: 0px 0px 2px black;
-	padding: 0px 5px;
-}
-.chrome-newtab:before,.chrome-newtab:after {
-	content: ' ';
-	float: left;
-	border-top: 15px solid rgba(255, 255, 255, 0.25);
-	width: 0px;
-	height: 0px;
-	border-left: 7px solid transparent;
-	margin-top: 5px;
+	background: rgba(220, 220, 230, 0.3);
 	position: absolute;
-	-webkit-transform: rotate(0deg);
-	border-radius: 0px;
-	margin-left: -8px;
-	
+	top: 5px;
+	line-height: 0px;
+	-webkit-transform: skewX(24deg);
+	width: 22px;
+	height: 15px;
+	border-radius: 2px 4px;
+	margin-left: 6px;
+	box-shadow: 0px 0px 4px #222;
 }
-.chrome-newtab:after {
-	float: left;
-	-webkit-transform: rotate(180deg);
-	padding-left: 14px;
-	margin-left: -13px;
+.chrome-newtab:hover {
+	background: rgba(240, 240, 250, 0.4);
+	box-shadow: 0px 0px 4px #444;
 }
-.chrome-newtab:hover:before,.chrome-newtab:hover:after {
-	border-top: 15px solid rgba(255, 255, 255, 0.35);
-}
-.chrome-newtab:before:focus,.chrome-newtab:after:focus  {
-	background-color:red;
-}
+
+
+
 .chrome-iframe {
 	width:100%;
-	height:104%;
+	height:100%;
 	border:none;
+	background:white;
 }
 .chrome-mainbar {
 	padding:4px;
 	color:#000;
 	overflow:auto;
 	border-bottom:1px #B6BAC0 solid;
-	font-family:segoe ui;
+	font-family:segoe ui,helvetica,sans-serif;
 	background-image: -webkit-linear-gradient(top, #fafafa, #e5e5e5); /* Chrome 10+, Saf5.1+ */
 }
 
@@ -193,10 +180,10 @@ background-color:#c13535;
 	font-size: 15px;
 	margin-left: 2px;
 	color: black;
-	width:89.2%;
+	width:89%;
 	display:inline-block;
 	background-color:#FFF;
-	font-family: segoe ui;
+	font-family:segoe ui ,calibri,sans-serif;
 	background-image: url('../icons/omni_related.png');
 	background-position: 5px 50%;
 	background-repeat:no-repeat;
@@ -210,15 +197,24 @@ background-color:#c13535;
 	outline:none;
 }
 .chrome-omnioptions {
-	position:absolute;
-	font-size:14px;
-	border-radius:5px;
-	margin-top:3px;
+	position: absolute;
+	font-size: 14px;
+	border-radius: 5px;
+	left: 89px;
+	right: 43px;
+	border: 1px #CCC solid;
+	top: 56px;
 }
 .chrome-omnioptions  span {
 	display:block;
 	padding:5px 7px;
 	background-color:rgba(255,255,255,0.95);
+}
+.chrome-omnioptions span:first-child {
+	border-radius:5px 5px 0px 0px;
+}
+.chrome-omnioptions span:last-child {
+	border-radius:0px 0px 5px 5px;
 }
 .chrome-omnioptions span:hover   {
 	background-color:rgba(205,225,255,0.95);
@@ -290,8 +286,8 @@ background-color:#c13535;
 .chrome-refreshicon {
 	border-radius:12px;
 	border-width:3px;
-	width:8px;
-	height:8px;
+	width:9px;
+	height:9px;
 	margin-top:6px;
 	margin-left:5px;
 	background-color:transparent;
@@ -299,7 +295,7 @@ background-color:#c13535;
 .chrome-refreshicon:after {
 	content: ' ';
 	position: absolute;
-	top: 13px;
+	top: 12px;
 	left: 14px;
 	width: 0;
 	height: 0;
